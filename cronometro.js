@@ -1,7 +1,8 @@
 /*Script que crea un cronómetro analógico funcional mendiante Canvas*/
 class Cronometro{
-    constructor(id, radio){
+    constructor(id, radio, slogan){
     this.id = id;
+    this.slogan = slogan;
     let lienzo =  document.getElementById(id);
     this.posX = lienzo.offsetLeft;
     this.posY = lienzo.offsetTop;
@@ -112,6 +113,7 @@ class Cronometro{
     let oX = -ancho/2;
     let oY = -(this.radio + alto);
     this.lapiz.save();
+
     /*Relleno de botones con un gradiente para darle un cierto efecto*/
     let grad = this.lapiz.createLinearGradient(oX,oY, oX+ancho, oY);
     grad.addColorStop(0,"black");
@@ -184,7 +186,7 @@ class Cronometro{
     this.divisiones(ang, long, txt);
     }
     let size = Math.round(this.radio/15)+'px';
-    this.texto("Made in CreaTuWeb", 0, -this.radio/2, "normal "+size+" Arial");
+    this.texto(this.slogan, 0, -this.radio/2, "normal "+size+" Arial");
     //Se guarda el cronómetro (sin secundero)
     this.fondo = lapiz.getImageData(0, 0, 2*this.ancho, 2*this.alto); 
     this.secundero();
@@ -262,10 +264,15 @@ class Cronometro{
     let angrads = (angulo - 90)*Math.PI/180;  
     return angrads.toFixed(4);
     }
-    } 
+    /*
+    Dibuja una división de tiempo
+    */} 
     /*El conometro se crea con dos argumentos
     id del canvas 
     tamaño: radio de la esfera 
     */
-    let cronometro = new Cronometro("cronometro", 250);
+    let cronometro = new Cronometro("cronometro", 120,"Hecho por sylvia");
     cronometro.dibujar();
+
+    let bigCrono = new Cronometro('big_crono', 250, 'Rolex');
+    bigCrono.dibujar();

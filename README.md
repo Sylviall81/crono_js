@@ -15,7 +15,7 @@ This project aims to create a simple analog stopwatch with basic functionalities
 
 The final appearance of the stopwatch will resemble the following design:
 
-[Insert image or diagram here]
+![Cronómetro](https://www.aulascript.com/proyectos/cronometro/cronometro.png)
 
 ## Objective 🎯
 
@@ -34,9 +34,11 @@ Explore and utilize this stopwatch for any purpose you can imagine! Its simplici
 
 ## Technologies Used 💻
 
-- HTML5
-- CSS3
-- JavaScript
+![HTML5](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/40px-HTML5_logo_and_wordmark.svg.png)
+![CSS3](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/35px-CSS3_logo_and_wordmark.svg.png)
+![JavaScript](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/40px-JavaScript-logo.png)
+
+
 
 ## Credits 🙌
 
